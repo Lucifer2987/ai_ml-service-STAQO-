@@ -1,0 +1,32 @@
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+python-multipart==0.0.9
+python-dotenv==1.0.1
+pydantic==2.8.0
+Pillow==10.4.0
+opencv-python-headless==4.10.0.84
+ultralytics==8.2.0
+easyocr==1.7.1
+torch==2.3.0
+torchvision==0.18.0
+transformers==4.44.0
+sentence-transformers==3.1.0
+#chromadb==0.5.3  # Do it later due to installation issues also it is use for Chatboat 
+langchain==0.3.0
+groq==0.11.0
+langchain-groq==0.2.0
+
+scikit-learn==1.5.0
+numpy==1.26.4
+pandas==2.2.2
+mlflow==2.16.0
+
+#Fix 2 — Use a pre-built ChromaDB wheel (No compiler needed)
+#If you don't want to install Build Tools right now, replace chromadb in your requirements.txt with a version that has pre-built wheels:
+#Open requirements.txt and change:
+#chromadb==0.5.3
+#to:
+#chromadb==0.4.24
+#Then run:
+#bashpip install chromadb==0.4.24
+#Version 0.4.24 has pre-built Windows wheels so it skips the C++ build step entirely.
